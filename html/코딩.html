@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>70_사각형의_넓이와_둘레_구하기(연습문제)</title>
+  <style>
+    #wrap {
+      text-align: center;
+    }
+
+    p {
+      margin: 30px 0 60px;
+
+      line-height: 35px;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <h1>사각형의 넓이와 둘레</h1>
+
+    <p>
+      버튼을 누르면 프로그램이 시작됩니다. <br />
+      <button>시작</button>
+    </p>
+
+    <h2 class="area">1. 사각형의 넓이는 <span>?</span></h2>
+    <h2 class="circumference">2. 사각형의 둘레는 <span>?</span></h2>
+
+  </div>
+
+  <script>
+    // 사각형의 width, height를 입력받아 넓이와 둘레를 출력하는 코드를 작성하시오.
+		const $btn = document.querySelector('button');
+
+		$btn.addEventListener('click',function(){
+			const $Wprompt = parseInt(prompt('사각형의 넓이는?'));
+			const $Hprompt = parseInt(prompt('사각형의 높이는?'));
+
+			document.querySelector('.area>span').textContent = $Wprompt*$Hprompt
+			document.querySelector('.circumference > span').textContent = $Wprompt*2 + $Hprompt*2
+
+
+		})
+  </script>
+</body>
+
+</html>

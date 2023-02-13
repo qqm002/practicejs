@@ -1,0 +1,286 @@
+*{
+	border: none; list-style: none; text-decoration: none; box-sizing: border-box; padding: 0; font-size: 14px; letter-spacing: -0.3px;
+	margin: 0; padding: 0;
+}
+body{
+	position: relative;
+}
+.box-body{
+	min-width: 350px;
+	padding:0 12px;
+	position: fixed;
+	width: calc(100% - 16px);
+	left: 50%;
+	transform: translateX(-50%);}
+h2{
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+input::placeholder{
+	color: rgb(180, 180, 180);
+	font-weight: bold;
+} 
+.header{
+	width: 100%;
+	height: 38px;
+	position: relative;
+	margin-bottom: 15px;
+}
+.header h1 {
+	width: 100%;
+	font-size: 16px;
+	text-align: center;
+	line-height: 38px;
+}
+.log-btn{
+	line-height: 38px;
+	position: absolute;
+	top: 5px;
+	right: 8px;
+}
+.logout{
+	background: url(../images/icon_btn_out.png) no-repeat center;
+	width: 20px;
+	height: 20px;
+	background-size: 20px;
+}
+.paging{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.pa-num{
+	background-color: none;
+	border-radius: 100%;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	color: rgb(201, 200, 200);
+	margin: 0 5px;
+	font-weight: bold;
+}
+.pa-num.active{
+	background-color: rgb(10, 163, 74);
+	color: #fff;
+}
+.paging-con{
+	display: none;
+}
+.paging-con.active{
+	display: block;
+}
+.tc.con{
+	position: relative;
+}
+.tab{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+.tab-list{
+	width: 100%;
+	padding: 10px 0px;
+	text-align: center;
+	font-weight: bold;
+}
+.tab-list.active{
+	color: rgb(10, 163, 74);
+	border-bottom: 2px solid rgb(10, 163, 74);
+}
+.tab-cont{
+	display: none;
+}
+.tab-cont.active{
+	display: block;
+}
+
+.follow{
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	padding-left: 45px;
+	position: relative;
+	margin-bottom: 10px;
+	font-weight: bold;
+
+}
+.input-box{
+	width: 100%;
+	position: relative;
+	margin-top: 20px;
+
+}
+#search-box{
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	padding: 8px;
+	/* border: 1px solid black; */
+}
+#search-box:focus{
+	/* border-color: rgb(10, 163, 74); */
+	border-radius: 5px;
+	padding: 8px;
+	outline-color: rgb(10, 163, 74);
+}
+.wrapList{
+	position: relative;
+	overflow-x: scroll;
+}
+.cte{
+	display: flex;
+	height: auto;
+	/* overflow-x: auto; */
+	margin-top: 16px;
+	padding-bottom: 15px;
+	position: relative;
+}
+.cte-list{
+	font-size: 12px;
+	min-width: 75px;
+	height: 32px;
+	text-align: center;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	margin: 0 5px;
+	color: rgb(201, 200, 200);
+	font-weight: bold;
+	line-height: 32px;
+
+}
+.cte-list.active{
+	background-color: rgb(10, 163, 74);
+	color: #fff;
+
+}
+.cte-con + .cte-con{
+	margin-top: 20px;
+}
+.cte-con.active{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px;
+}
+.tab-cont{
+	padding: 15px 5px;
+}
+.bank-check{
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	 gap: 5px 2%;
+	/*position: absolute;
+  left: 50%;
+  transform: translateX(-50%); */
+}
+.bank-check li{
+	position: relative;
+	width: calc(100% - 68%);	
+	height: 100px;
+	display: block;
+	/* padding: 0 5px; */
+}
+.bank-check li input[type = checkbox]{
+	display: none;
+
+}
+.bank-check li input[type = checkbox]:checked + label::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 2px solid rgb(10, 163, 74);
+	border-radius: 10px;
+	left: 0;
+	top: 0;
+}
+.bank-check li input[type = checkbox] + label{
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid black; */
+	display: block;
+	text-align: center;
+}
+.bank-check li label div{
+	height: 66px;
+
+}
+/* ico */
+.ico{
+	text-indent: -10000px;
+}
+
+.search{
+	background: url(../images/ico_find.png) no-repeat center;
+	width: 18px;
+	height: 18px;
+	background-size: 18px;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+.follow .icon{
+	background: url(../images/icon_join_group.png) no-repeat center;
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.allow{
+	background: url(../images/bul_join_group.png) no-repeat center;
+	width: 12px;
+	height: 12px;
+	background-size: 12px;
+	position: absolute;
+	right: 5px;
+	top: 18px;
+}
+
+.logo1{
+	background: url(../images/logos/A1AAAD0000.png) no-repeat center;
+	background-size: 40px;
+}
+.logo1 + span{
+	max-width: 50px;
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+}
+.btn-area{
+	width: 100%;
+}
+.top-btn{
+	background: url(../images/btn_top.png) no-repeat center;
+	background-size: 55px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 15px;
+	bottom: 10px;
+	z-index: 10;
+}
+.wrapList-con{
+	position: absolute;
+	height:  calc(100vh - 360px);
+	width: calc(100% - 24px);
+	overflow: auto;
+	padding: 10px 5px 20px;
+	transform: translateX(-50%);
+	left: 50%;
+}
+li{
+	cursor: pointer;
+}

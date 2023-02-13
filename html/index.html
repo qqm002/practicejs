@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/jquery-3.6.3.min.js"></script>
+
+	<title>올원뱅크 자산연결</title>
+</head>
+<body>
+	<div class="box-body">
+		<div class="header">
+			<h1>자산연결</h1>
+			<div class="log-btn">
+				<button type="button" class="logout"></button>
+			</div>
+		</div>
+		<div class="content">
+			<ul class="paging">
+				<li class="pa-num active" data-tab ="data1">1</li>
+				<li class="pa-num" data-tab ="data2">2</li>
+				<li class="pa-num" data-tab ="data3">3</li>
+				<li class="pa-num" data-tab ="data4">4</li>
+			</ul>
+			<div data-tab ="data1" class="paging-con active">
+				<ul class="tab">
+					<li class="tab-list" data-tab="data01">추천기관으로 연결</li>
+					<li class="tab-list active" data-tab="data02">연결기관 직접검색</li>
+				</ul>
+				<div data-tab="data01" class="tab-cont">
+	
+				</div>
+				<div data-tab="data02" class="tab-cont active">
+					<div class="tc-header">
+						<div class="follow">
+							<span class="icon"></span>
+							가입기관 불러오기
+							<a href="#" class="ico allow">더보기</a>
+						</div>
+						<div class="input-box">
+							<input type="text" id="search-box" placeholder="기관명 검색(기관명을 입력하세요)">
+							<label for="search-box"><div class="ico search">돋보기</div></label>
+						</div>
+					</div>
+					<div class="tc-con">
+						<div class="wrapList">
+							<ul class="cte">
+								<li class="cte-list" data-tab="data001">은행<span>10</span></li>
+								<li class="cte-list" data-tab="data002">카드<span>10</span></li>
+								<li class="cte-list" data-tab="data003">증권<span>10</span></li>
+								<li class="cte-list" data-tab="data004">보험<span>10</span></li>
+								<li class="cte-list" data-tab="data005">은행1<span>10</span></li>
+								<li class="cte-list" data-tab="data006">은행2<span>10</span></li>
+								<li class="cte-list" data-tab="data007">은행3<span>10</span></li>
+							</ul>
+						</div>
+						<div class="wrapList-con">
+							<div class="cte-con-wrap">
+								<div data-con="data001" class="cte-con top">
+									<h2>은행</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD0000" name="bank-input"  value="1">
+											<label for="A1AAAD0000"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0001" name="bank-input"  value="2">
+											<label for="A1AAAD0001"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0002" name="bank-input"  value="3">
+											<label for="A1AAAD0002"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0003" name="bank-input"  value="4">
+											<label for="A1AAAD0003"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0004" name="bank-input"  value="5">
+											<label for="A1AAAD0004"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0005" name="bank-input"  value="6">
+											<label for="A1AAAD0005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0006" name="bank-input"  value="7">
+											<label for="A1AAAD0006"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0007" name="bank-input"  value="8">
+											<label for="A1AAAD0007"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0008" name="bank-input"  value="9">
+											<label for="A1AAAD0008"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0009" name="bank-input"  value="10">
+											<label for="A1AAAD0009"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0010" name="bank-input"  value="11">
+											<label for="A1AAAD0010"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0011" name="bank-input"  value="12">
+											<label for="A1AAAD0011"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+								<div data-con="data002" class="cte-con">
+									<h2>카드</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD000" name="bank-input"  value="1">
+											<label for="A1AAAD000"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD001" name="bank-input"  value="2">
+											<label for="A1AAAD001"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD002" name="bank-input"  value="3">
+											<label for="A1AAAD002"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD003" name="bank-input"  value="4">
+											<label for="A1AAAD003"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD004" name="bank-input"  value="5">
+											<label for="A1AAAD004"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD005" name="bank-input"  value="6">
+											<label for="A1AAAD005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD006" name="bank-input"  value="7">
+											<label for="A1AAAD006"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD007" name="bank-input"  value="8">
+											<label for="A1AAAD007"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0088" name="bank-input"  value="9">
+											<label for="A1AAAD0088"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD009" name="bank-input"  value="10">
+											<label for="A1AAAD009"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0010" name="bank-input"  value="11">
+											<label for="A1AAAD0010"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0011" name="bank-input"  value="12">
+											<label for="A1AAAD0011"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+								<div data-con="data003" class="cte-con">
+									<h2>증권</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD00001" name="bank-input"  value="01">
+											<label for="A1AAAD00001"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00012" name="bank-input"  value="02">
+											<label for="A1AAAD00012"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00023" name="bank-input"  value="03">
+											<label for="A1AAAD00023"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00034" name="bank-input"  value="04">
+											<label for="A1AAAD00034"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00045" name="bank-input"  value="05">
+											<label for="A1AAAD00045"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00056" name="bank-input"  value="06">
+											<label for="A1AAAD0005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00066" name="bank-input"  value="07">
+											<label for="A1AAAD00066"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00077" name="bank-input"  value="08">
+											<label for="A1AAAD00077"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00088" name="bank-input"  value="09">
+											<label for="A1AAAD00088"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00099" name="bank-input"  value="010">
+											<label for="A1AAAD00099"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00100" name="bank-input"  value="011">
+											<label for="A1AAAD00100"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD00111" name="bank-input"  value="012">
+											<label for="A1AAAD00111"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+								<div data-con="data004" class="cte-con">
+									<h2>보험</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD0000" name="bank-input"  value="1">
+											<label for="A1AAAD0000"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0001" name="bank-input"  value="2">
+											<label for="A1AAAD0001"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0002" name="bank-input"  value="3">
+											<label for="A1AAAD0002"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0003" name="bank-input"  value="4">
+											<label for="A1AAAD0003"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0004" name="bank-input"  value="5">
+											<label for="A1AAAD0004"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0005" name="bank-input"  value="6">
+											<label for="A1AAAD0005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0006" name="bank-input"  value="7">
+											<label for="A1AAAD0006"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0007" name="bank-input"  value="8">
+											<label for="A1AAAD0007"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0008" name="bank-input"  value="9">
+											<label for="A1AAAD0008"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0009" name="bank-input"  value="10">
+											<label for="A1AAAD0009"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0010" name="bank-input"  value="11">
+											<label for="A1AAAD0010"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0011" name="bank-input"  value="12">
+											<label for="A1AAAD0011"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+								<div data-con="data005" class="cte-con">
+									<h2>은행1</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD0000" name="bank-input"  value="1">
+											<label for="A1AAAD0000"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0001" name="bank-input"  value="2">
+											<label for="A1AAAD0001"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0002" name="bank-input"  value="3">
+											<label for="A1AAAD0002"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0003" name="bank-input"  value="4">
+											<label for="A1AAAD0003"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0004" name="bank-input"  value="5">
+											<label for="A1AAAD0004"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0005" name="bank-input"  value="6">
+											<label for="A1AAAD0005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0006" name="bank-input"  value="7">
+											<label for="A1AAAD0006"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0007" name="bank-input"  value="8">
+											<label for="A1AAAD0007"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0008" name="bank-input"  value="9">
+											<label for="A1AAAD0008"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0009" name="bank-input"  value="10">
+											<label for="A1AAAD0009"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0010" name="bank-input"  value="11">
+											<label for="A1AAAD0010"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0011" name="bank-input"  value="12">
+											<label for="A1AAAD0011"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+								<div data-con="data006" class="cte-con">
+									<h2>은행2</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD0000" name="bank-input"  value="1">
+											<label for="A1AAAD0000"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0001" name="bank-input"  value="2">
+											<label for="A1AAAD0001"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0002" name="bank-input"  value="3">
+											<label for="A1AAAD0002"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0003" name="bank-input"  value="4">
+											<label for="A1AAAD0003"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0004" name="bank-input"  value="5">
+											<label for="A1AAAD0004"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0005" name="bank-input"  value="6">
+											<label for="A1AAAD0005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0006" name="bank-input"  value="7">
+											<label for="A1AAAD0006"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0007" name="bank-input"  value="8">
+											<label for="A1AAAD0007"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0008" name="bank-input"  value="9">
+											<label for="A1AAAD0008"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0009" name="bank-input"  value="10">
+											<label for="A1AAAD0009"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0010" name="bank-input"  value="11">
+											<label for="A1AAAD0010"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0011" name="bank-input"  value="12">
+											<label for="A1AAAD0011"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+								<div data-con="data007" class="cte-con">
+									<h2>은행3</h2>
+									<ul class="bank-check">
+										<li>
+											<input type="checkbox" id="A1AAAD0000" name="bank-input"  value="1">
+											<label for="A1AAAD0000"><div class="logo1"></div><span>은행1은행1은행1은행1</span></label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0001" name="bank-input"  value="2">
+											<label for="A1AAAD0001"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0002" name="bank-input"  value="3">
+											<label for="A1AAAD0002"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0003" name="bank-input"  value="4">
+											<label for="A1AAAD0003"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0004" name="bank-input"  value="5">
+											<label for="A1AAAD0004"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0005" name="bank-input"  value="6">
+											<label for="A1AAAD0005"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0006" name="bank-input"  value="7">
+											<label for="A1AAAD0006"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0007" name="bank-input"  value="8">
+											<label for="A1AAAD0007"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0008" name="bank-input"  value="9">
+											<label for="A1AAAD0008"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0009" name="bank-input"  value="10">
+											<label for="A1AAAD0009"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0010" name="bank-input"  value="11">
+											<label for="A1AAAD0010"><div class="logo1"></div>은행1</label>
+										</li>
+										<li>
+											<input type="checkbox" id="A1AAAD0011" name="bank-input"  value="12">
+											<label for="A1AAAD0011"><div class="logo1"></div>은행1</label>
+										</li>
+			
+									</ul>
+								</div>
+							</div>
+							</div>
+
+					</div>
+				</div>	
+			</div>
+			<div data-tab ="data2" class="paging-con">
+				2
+			</div>
+			<div data-tab ="data3" class="paging-con">
+				3
+			</div>
+			<div data-tab ="data4" class="paging-con 4">
+				4
+			</div>
+
+		</div>
+		
+
+
+	</div>
+	<button type="button" id="top-btn" class="top-btn"></button>
+
+	<script src="../js/index.js"></script>
+
+</body>
+		
+
+</html>
